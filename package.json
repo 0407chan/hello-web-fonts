@@ -2,11 +2,14 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://0407chan.github.io/hello-web-fonts",
   "scripts": {
     "start": "craco start",
     "dev": "BROWSER=none craco start",
     "build": "rm -rf docs && GENERATE_SOURCEMAP=false craco build && mv build docs",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@craco/craco": "^6.3.0",
@@ -22,6 +25,15 @@
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "craco-alias": "^3.0.1",
+    "eslint": "latest",
+    "eslint-plugin-react": "latest",
+    "gh-pages": "^3.2.3",
+    "prettier": "2.4.0"
   },
   "eslintConfig": {
     "extends": [
@@ -41,13 +53,5 @@
       "last 1 safari version"
     ]
   },
-  "packageManager": "yarn@3.0.2",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "craco-alias": "^3.0.1",
-    "eslint": "latest",
-    "eslint-plugin-react": "latest",
-    "prettier": "2.4.0"
-  }
+  "packageManager": "yarn@3.0.2"
 }
