@@ -1,13 +1,12 @@
-import React from 'react';
-import './App.css';
-import HelloWorld from './components/HelloWorld';
-import logo from './logo.svg';
+import HelloWorld from '@/components/HelloWorld'
+import React from 'react'
+import './App.css'
+import logo from './logo.svg'
 
-
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <HelloWorld/>
+      <HelloWorld />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -23,7 +22,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
