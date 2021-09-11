@@ -42,6 +42,11 @@
   },
   "packageManager": "yarn@3.0.2",
   "devDependencies": {
-    "craco-alias": "^3.0.1"
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "craco-alias": "^3.0.1",
+    "eslint": "latest",
+    "eslint-plugin-react": "latest",
+    "prettier": "2.4.0"
   }
 }
