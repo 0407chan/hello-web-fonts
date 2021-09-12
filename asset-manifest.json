@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/hello-web-fonts/static/css/main.56f8271e.chunk.css",
-    "main.js": "/hello-web-fonts/static/js/main.d3421e6c.chunk.js",
+    "main.js": "/hello-web-fonts/static/js/main.9b2c44ce.chunk.js",
     "runtime-main.js": "/hello-web-fonts/static/js/runtime-main.127c2b03.js",
-    "static/js/2.5f4b34e8.chunk.js": "/hello-web-fonts/static/js/2.5f4b34e8.chunk.js",
+    "static/js/2.3a78ec51.chunk.js": "/hello-web-fonts/static/js/2.3a78ec51.chunk.js",
     "static/js/3.61cbdffc.chunk.js": "/hello-web-fonts/static/js/3.61cbdffc.chunk.js",
     "index.html": "/hello-web-fonts/index.html",
-    "static/js/2.5f4b34e8.chunk.js.LICENSE.txt": "/hello-web-fonts/static/js/2.5f4b34e8.chunk.js.LICENSE.txt"
+    "static/js/2.3a78ec51.chunk.js.LICENSE.txt": "/hello-web-fonts/static/js/2.3a78ec51.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.127c2b03.js",
-    "static/js/2.5f4b34e8.chunk.js",
+    "static/js/2.3a78ec51.chunk.js",
     "static/css/main.56f8271e.chunk.css",
-    "static/js/main.d3421e6c.chunk.js"
+    "static/js/main.9b2c44ce.chunk.js"
   ]
 }
