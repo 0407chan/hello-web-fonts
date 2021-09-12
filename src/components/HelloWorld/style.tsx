@@ -4,18 +4,33 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: linear-gradient(#000000, #000000b2);
   height: 100vh;
   width: 100vw;
 `
 
-export const MainText = styled.span<{ myText: string }>`
+export const WordWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 100%;
+`
+export const Word = styled.div`
+  display: flex;
+`
+
+export const StyledText = styled.span<{ myText: string }>`
   position: relative;
   z-index: 1;
   font-size: 120px;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(#fba7ff, #98ecff);
+  background: linear-gradient(#98ecff, #fba7ff);
   -webkit-background-clip: text;
   color: transparent;
 
@@ -27,7 +42,7 @@ export const MainText = styled.span<{ myText: string }>`
     left: 0;
     z-index: -1;
     content: '${(props) => props.myText}';
-    background-image: linear-gradient(#f201ff, #09d2ff);
+    background-image: linear-gradient(#25d7ff, #f201ff);
     transition: opacity 0.2s ease, transform 0.2s ease;
     opacity: 0;
     -webkit-background-clip: text;

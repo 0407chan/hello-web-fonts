@@ -18,21 +18,28 @@ const HelloWorld: React.FC = () => {
 
   return (
     <S.Container>
-      {text.split('').map((alpha, index) => {
-        const value = `${alpha}-${index}`
-        return (
-          <S.MainText
-            key={value}
-            ref={(element) => refMap.set(value, element)}
-            className="no-drag"
-            myText={alpha}
-            onMouseOver={() => hoverEvent(value)}
-            onMouseLeave={() => removeClass(value)}
-          >
-            {alpha !== ' ' ? alpha : <span style={{ marginRight: 40 }} />}
-          </S.MainText>
-        )
-      })}
+      <S.WordWrapper>
+        {text.split(' ').map((word, index) => {
+          const newWord: JSX.Element[] = []
+          word.split('').forEach((alpha, index) => {
+            const value = `${alpha}-${index}`
+            newWord.push(
+              <S.StyledText
+                key={value}
+                ref={(element) => refMap.set(value, element)}
+                className="no-drag"
+                myText={alpha}
+                onMouseOver={() => hoverEvent(value)}
+                onMouseLeave={() => removeClass(value)}
+              >
+                {alpha}
+              </S.StyledText>
+            )
+          })
+
+          return <S.Word key={word}>{newWord}</S.Word>
+        })}
+      </S.WordWrapper>
     </S.Container>
   )
 }
