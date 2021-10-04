@@ -19,10 +19,10 @@ const HelloWorld: React.FC = () => {
   return (
     <S.Container>
       <S.WordWrapper>
-        {text.split(' ').map((word, index) => {
+        {text.split(' ').map((word, wordIndex) => {
           const newWord: JSX.Element[] = []
-          word.split('').forEach((alpha, index) => {
-            const value = `${alpha}-${index}`
+          word.split('').forEach((alpha, alpahIndex) => {
+            const value = `${alpha}-${wordIndex}-${alpahIndex}`
             newWord.push(
               <S.StyledText
                 key={value}
